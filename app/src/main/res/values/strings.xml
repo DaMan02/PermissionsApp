@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PermissionsApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_one">This is fragment one</string>
+    <string name="fragment_two">This is fragment two</string>
+</resources>
