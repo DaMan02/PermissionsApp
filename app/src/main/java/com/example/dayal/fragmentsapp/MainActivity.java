@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 if(permissionCheckCamera!= PackageManager.PERMISSION_GRANTED){
                     // Should we show an explanation?
                     if(ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,Manifest.permission.CAMERA)){
-                        Toast.makeText(MainActivity.this, "This permission is very good! Accept it", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "The app needs this permisssion to work", Toast.LENGTH_SHORT).show();
                         ActivityCompat.requestPermissions(MainActivity.this,new String[]{Manifest.permission.CAMERA},MY_PERM_REQ_CAMERA);
                         //TODO if user sees msg, try again to request
                     }
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             case MY_PERM_REQ_CAMERA: if(grantResults.length>0&&grantResults[0]==PackageManager.PERMISSION_GRANTED){
                 // permission was granted, yay! Do the
                 // contacts-related task you need to do
-                Toast.makeText(this, "Thank you allowing access to your camera.", Toast.LENGTH_SHORT).show();                         }
+                Toast.makeText(this, "Thank you for allowing access to your camera.", Toast.LENGTH_SHORT).show();                         }
                 else {
                 // permission denied, boo! Disable the
                 // functionality that depends on this permission.
